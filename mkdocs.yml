@@ -1,0 +1,88 @@
+site_name: Quantitative Finance Knowledge Base
+site_description: Personal knowledge system for quantitative finance projects and learning
+site_author: Your Name
+site_url: https://norjoh.github.io/quant-finance-knowledge  
+
+# Repository
+repo_name: norjoh/quant-finance-knowledge  
+repo_url: https://github.com/norjoh/quant-finance-knowledge  
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - admonition
+  - tables
+  - footnotes
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Portfolio Roadmap: portfolio-roadmap.md
+  - Guides:
+    - Overview: guides/index.md
+  - Concepts:
+    - Overview: concepts/index.md
+  - Code Snippets:
+    - Overview: snippets/index.md
+  - Projects:
+    - Overview: projects/overview.md
+  - Templates:
+    - Project README: templates/project-readme.md
+  - Tools:
+    - AI Prompting: tools/ai-prompting.md
