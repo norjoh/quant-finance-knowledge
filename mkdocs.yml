@@ -1,11 +1,11 @@
 site_name: Quantitative Finance Knowledge Base
 site_description: Personal knowledge system for quantitative finance projects and learning
 site_author: Your Name
-site_url: https://norjoh.github.io/quant-finance-knowledge  
+site_url: https://norjoh.github.io/quant-finance-knowledge
 
 # Repository
-repo_name: norjoh/quant-finance-knowledge  
-repo_url: https://github.com/norjoh/quant-finance-knowledge  
+repo_name: norjoh/quant-finance-knowledge
+repo_url: https://github.com/norjoh/quant-finance-knowledge
 edit_uri: edit/main/docs/
 
 theme:
@@ -25,7 +25,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  
+
   features:
     - navigation.tabs
     - navigation.sections
@@ -76,6 +76,7 @@ nav:
   - Portfolio Roadmap: portfolio-roadmap.md
   - Guides:
     - Overview: guides/index.md
+    - Backtesting: guides/backtesting.md
   - Concepts:
     - Overview: concepts/index.md
   - Code Snippets:
